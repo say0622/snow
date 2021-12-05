@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>눈 오는 날</title>
+		<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+		<style>
+			body{ margin: 10px; background: #D0D0D0; font-family: 'Single Day', cursive;}
+			#myCanvas{background: black; }
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="800" height="800">
+      CANVAS를 지원하지 않습니다.</canvas>
+		<script>
+
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.moveTo(230, 230);
+    ctx.lineTo(120, 430);
+    ctx.lineTo(160, 430);
+    ctx.lineTo(60, 620);
+    ctx.lineTo(100, 620);
+    ctx.lineTo(0, 800);
+    ctx.lineTo(460, 800);
+        ctx.lineTo(360, 620);
+        ctx.lineTo(400, 620);
+        ctx.lineTo(300, 430);
+        ctx.lineTo(340, 430);
+        ctx.lineTo(230, 230);
+    ctx.fillStyle = "DarkOliveGreen";
+    ctx.fill();
+
+    ctx.beginPath();
+      ctx.moveTo(600,780);
+      ctx.arc(600, 780, 20, 0, Math.PI*2);
+      ctx.moveTo(600,750);
+      ctx.arc(600, 750, 15, 0, Math.PI*2);
+      ctx.moveTo(700,660);
+      ctx.arc(700, 660, 20, 0, Math.PI*2);
+      ctx.moveTo(700,700);
+      ctx.arc(700, 700, 30, 0, Math.PI*2);
+      ctx.moveTo(700,760);
+      ctx.arc(700, 760,50, 0, Math.PI*2);
+     ctx.fillStyle="white";
+      ctx.fill();
+
+      ctx.beginPath();
+    ctx.moveTo(600,780);
+      ctx.arc(595, 750, 3, 0, Math.PI*2);
+    ctx.moveTo(600,780);
+      ctx.arc(605, 750, 3, 0, Math.PI*2);
+          ctx.moveTo(700,700);
+      ctx.arc(693, 657, 3, 0, Math.PI*2);
+                ctx.moveTo(700,700);
+      ctx.arc(708, 657, 3, 0, Math.PI*2);
+      ctx.fillStyle="black";
+      ctx.fill();
+
+          ctx.beginPath();
+    ctx.moveTo(600,780);
+      ctx.arc(600, 756, 3, 0, Math.PI*2);
+          ctx.moveTo(700,700);
+      ctx.arc(700, 660, 3, 0, Math.PI*2);
+      ctx.fillStyle="red";
+      ctx.fill();
+
+      ctx.beginPath();
+          ctx.moveTo(700,700);
+      ctx.arc(700, 700, 3, 0, Math.PI*2);
+      ctx.fillStyle="red";
+      ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(700,700);
+      ctx.arc(700, 690, 3, 0, Math.PI*2);
+          ctx.moveTo(700,700);
+      ctx.arc(700, 710, 3, 0, Math.PI*2);
+      ctx.fillStyle="green";
+      ctx.fill();
+
+     var r,g,b,a,size;
+          
+        for (var i=135; i<337; i=i+25) {
+               r=Math.round(Math.random()*255);
+               g=Math.round(Math.random()*255);
+               b=Math.round(Math.random()*255);
+               a=Math.random();
+               size=Math.round(Math.random()*7+4);
+                ctx.beginPath();
+                      ctx.fillStyle="rgba("+r+","+g+","+b+","+a+")";   
+            ctx.arc(i, 400, size, 0, Math.PI*2);
+            ctx.fill();
+          }
+        for (var i1=80; i1<400; i1=i1+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+          a=Math.random();
+          size=Math.round(Math.random()*7+4);
+            ctx.beginPath();
+            ctx.fillStyle="rgba("+r+","+g+","+b+","+a+")";   
+            ctx.arc(i1, 600, size, 0, Math.PI*2);
+            ctx.fill();
+          }
+
+          for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+          a=Math.random();
+          size=Math.round(Math.random()*7+4);
+            ctx.beginPath();
+            ctx.fillStyle="rgba("+r+","+g+","+b+","+a+")";   
+            ctx.arc(i2, 790, size, 0, Math.PI*2);
+            ctx.fill();
+          }
+
+          for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+            ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";   
+           ctx.moveTo(190,320);
+           ctx.arc(190, 320, 20, 0, Math.PI*2);
+           ctx.fill();
+         }
+
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+            ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";   
+           ctx.moveTo(240,370);
+           ctx.arc(240, 370, 10, 0, Math.PI*2);
+           ctx.fill();
+         }
+
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+            ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";   
+           ctx.moveTo(260,290);
+           ctx.arc(260, 290, 15, 0, Math.PI*2);
+           ctx.fill();
+         }
+
+          for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+            ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";   
+           ctx.moveTo(100,540);
+           ctx.arc(100, 540, 15, 0, Math.PI*2);
+           ctx.fill();
+         }
+          for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+            ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";   
+           ctx.moveTo(145,470);
+           ctx.arc(145, 470, 10, 0, Math.PI*2);
+           ctx.fill();
+         }
+          for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(260,550);
+           ctx.arc(260, 550, 23, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(200,510);
+           ctx.arc(200, 510, 15, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(320,490);
+           ctx.arc(320, 490, 20, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(60,700);
+           ctx.arc(60, 700, 20, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+            ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";   
+           ctx.moveTo(130,660);
+           ctx.arc(130, 660, 10, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(200,730);
+           ctx.arc(200, 730, 30, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(300,650);
+           ctx.arc(300, 650, 23, 0, Math.PI*2);
+           ctx.fill();
+         }
+         for (var i2=10; i2<450; i2=i2+25) {
+          r=Math.round(Math.random()*255);
+          g=Math.round(Math.random()*255);
+          b=Math.round(Math.random()*255);
+           ctx.beginPath();
+          ctx.fillStyle="rgb("+r+","+g+","+b+")";  
+           ctx.moveTo(420,740);
+           ctx.arc(420, 740, 15, 0, Math.PI*2);
+           ctx.fill();
+         }
+
+         ctx.beginPath()
+         ctx.font = "80px Didot";
+         ctx.fillText("Merry", 540, 100);
+         ctx.beginPath()
+         ctx.font = "80px Didot";
+         ctx.fillText("Christmas!", 380, 180);
+
+         for (var i=0; i<800; i=i+30) {
+              r=255
+              b=255
+              g=255
+              a=Math.random();
+              size=Math.round(Math.random()*5+3);
+              x=Math.round(Math.random()*800);
+              y=Math.round(Math.random()*800);
+              ctx.beginPath();
+            ctx.fillStyle="rgba("+r+","+g+","+b+","+a+")";   
+            ctx.arc(x, y, size, 0, Math.PI*2);
+            ctx.fill();
+          }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(600,400);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(100,100);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(500,200);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(400,200);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(90,270);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(90,270);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+ 
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(400,700);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(70,20);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(10,130);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(3,400);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+      
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(130,450);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+      
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(10,130);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(10,430);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(-80,130);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 1;
+      ctx.translate(-600,390);
+      for (var i=0; i<100; i++) {
+      ctx.rotate(10*Math.PI / 90);
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      ctx.moveTo(0,0);
+      ctx.lineTo(0,15);
+      }
+         
+		</script>
+    <h3>[눈 오는 날]</h3>
+    <p>22157011 김채연 X 22157021 신아영</p>
+    <p>화이트 크리스마스를 기대하며... 모두의 크리스마스 소원이 이루어지길 바랍니다 >_<</p>
+    <p>새로고침을 반복해서 해주시면 더욱 아름답게 즐기실 수 있습니다.</p>
+	</body>
+</html>
